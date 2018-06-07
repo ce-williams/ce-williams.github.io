@@ -26,6 +26,6 @@ var values = {
     }
 };
 
+console.log(crystals);
+console.log(values);
 
-
-$(".blue")
