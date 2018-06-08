@@ -26,13 +26,8 @@ var values = {
     }
 };
 
-
-
-
-// if (goalValueVar)
-
 function getRandomInt(min, max) {
-    
+
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -49,18 +44,14 @@ function startNewGame() {
     $("#numberToBeat").html(values.goalValueVar);
 }
 
-
-
-startNewGame();
-
 function addValueToScore(color) {
     crystals.forEach(function (crystal) {
         if (color == crystal.color) {
             console.log(crystal);
             values.user.userTotalVar += crystal.value;
             $("#totalScore").html(values.user.userTotalVar);
-            
-            
+
+
             if (values.user.userTotalVar == values.goalValueVar) {
                 values.user.userWins++;
                 $(".wins:first").html(values.user.userWins)
@@ -73,25 +64,22 @@ function addValueToScore(color) {
                 startNewGame();
             }
 
-
-
         }
     })
 }
 
 
-
-
 $(".blue:first").on("click", function () {
     addValueToScore("blue");
 });
-// $(".green:first").addEventListener("click")
-// $(".white:first").addEventListener("click")
-// $(".yellow:first").addEventListener("click")
+$(".green:first").on("click", function () {
+    addValueToScore("green");
+});
+$(".white:first").on("click", function () {
+    addValueToScore("white");
+});
+$(".yellow:first").on("click", function () {
+    addValueToScore("yellow");
+});
 
-
-
-
-console.log(crystals);
-console.log(values);
-
+startNewGame();
