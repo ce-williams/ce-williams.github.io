@@ -72,3 +72,10 @@ img {
 .total, .totalNumber {
     width: 500px;
 }
+
+.wins {
+    color: green;
+}
+.losses {
+    color: red;
+}
