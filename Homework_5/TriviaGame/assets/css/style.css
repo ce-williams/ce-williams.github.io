@@ -7,7 +7,17 @@ body {
 }
 
 .jumbotron {
+    border-radius: 5px;
     background: forestgreen;
     font-family: Arial, Helvetica, sans-serif
+
+}
+
+.question {
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: linear-gradient(tan, rgba(128, 128, 128, 0.514));
 
 }
