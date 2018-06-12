@@ -1,0 +1,13 @@
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background: gray;
+
+}
+
+.jumbotron {
+    background: forestgreen;
+    font-family: Arial, Helvetica, sans-serif
+
+}
