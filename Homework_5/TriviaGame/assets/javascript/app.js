@@ -38,6 +38,12 @@ var user = {
     }
 }
 
+var userChoiceOne = "none"
+var userChoiceTwo = "none"
+var userChoiceThree = "none"
+var userChoiceFour = "none"
+var userChoiceFive = "none"
+
 
 //Question One
 
@@ -74,6 +80,55 @@ $(".choiceFiveTwo").text(questionAnswers.five.choiceTwo)
 $(".choiceFiveThree").text(questionAnswers.five.choiceThree)
 
 
+// 2
+// 4
+// 1
+// 4
+// 2
+
+
+
+
 function submitTest() {
-    console.log($('input[name=inlineOptions1]:checked'));
-}
+    console.log ($('input[name=inlineOptions1]:checked').val());
+    console.log ($('input[name=inlineOptions2]:checked').val());
+    uconsole.log  ($('input[name=inlineOptions3]:checked').val());
+    console.log ($('input[name=inlineOptions4]:checked').val());
+    console.log  ($('input[name=inlineOptions5]:checked').val());
+
+   
+
+
+
+};
+
+// if (userChoiceOne = "option2") {
+//     user.score.correct ++
+// } else {
+//     user.score.incorrect ++
+// };
+// if (userChoiceTwo = "option4") {
+//     user.score.correct ++
+// } else  {
+//     user.score.incorrect ++
+// }
+// if (userChoiceThree = "option1") {
+//     user.score.correct ++
+// } else {
+//     user.score.incorrect ++
+// }
+// if (userChoiceFour = "option4") {
+//     user.score.correct ++
+// } else {
+//     user.score.incorrect ++
+// }
+// if (userChoiceFive = "option2") {
+//     user.score.correct ++
+// } else  {
+//     user.score.incorrect ++
+// }
+
+
+//     console.log(userChoiceOne)
+//     console.log(userChoiceTwo)
+
