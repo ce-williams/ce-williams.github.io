@@ -7,122 +7,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 
 <body>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid fadeIn">
         <div class="container">
             <h1 class="display-4">Science Trivia!</h1>
             <p class="lead">Test your science knowledge by answering the questions below</p>
         </div>
     </div>
+    <fourm class="qOne" id="One">
+        <div class="question question_1 animated fadeInDown">
+            <h2>What organelle is nicknemed the powerhouse of the cell?</h2>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions1" id="inline1" value="option1">
+                <label class="form-check-label choiceOneOne" for="inline1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input answer" type="radio" name="inlineOptions1" id="inline2" value="option2">
+                <label class="form-check-label answerOne" for="inline2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions1" id="inlineRadio3" value="option3">
+                <label class="form-check-label choiceOneTwo" for="inlineRadio3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions1" id="inline4" value="option4">
+                <label class="form-check-label choiceOneThree" for="inline4">4</label>
+            </div>
+        </div>
+    </fourm>
 
-    <div class="question question_1">
-        <h2>What organelle is nicknemed the powerhouuse of the cell?</h2>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline1" value="option1">
-            <label class="form-check-label" for="inline1">1</label>
+    <fourm class="qTwo" id="Two">
+        <div class="question question_2 animated fadeInDown">
+            <h2>In Organic chemistry, which of the following will react with a nucleophillic keytone?</h2>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions2" id="inline1" value="option1">
+                <label class="form-check-label choiceTwoOne" for="inline1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions2" id="inline2" value="option2">
+                <label class="form-check-label choiceTwoTwo" for="inline2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions2" id="inlineRadio3" value="option3">
+                <label class="form-check-label choiceTwoThree" for="inlineRadio3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input answer" type="radio" name="inlineOptions2" id="inline4" value="option4">
+                <label class="form-check-label answerTwo" for="inline4">4</label>
+            </div>
         </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline2" value="option2">
-            <label class="form-check-label" for="inline2">2</label>
+    </fourm>
+    <form class="qThree" id="Three">
+        <div class="question question_3 animated fadeInDown">
+            <h2>Who popularized the concept of Natural Selection?</h2>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input answer" type="radio" name="inlineOptions3" id="inline1" value="option1">
+                <label class="form-check-label answerThree" for="inline1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions3" id="inline2" value="option2">
+                <label class="form-check-label choiceThreeOne" for="inline2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions3" id="inlineRadio3" value="option3">
+                <label class="form-check-label choiceThreeTwo" for="inlineRadio3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions3" id="inline4" value="option4">
+                <label class="form-check-label choiceThreeThree" for="inline4">4</label>
+            </div>
         </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">3</label>
+    </form>
+    <form class="qFour" id="Four">
+        <div class="question question_4 animated fadeInDown">
+            <h2>Millions of years ago, the earth was made up of one land mass that has since seperated due to continental drift.
+                What was this original land mass named?
+            </h2>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions4" id="inline1" value="option1">
+                <label class="form-check-label choiceFourOne" for="inline1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions4" id="inline2" value="option2">
+                <label class="form-check-label choiceFourTwo" for="inline2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions4" id="inlineRadio3" value="option3">
+                <label class="form-check-label choiceFourThree" for="inlineRadio3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input answer" type="radio" name="inlineOptions4" id="inline4" value="option4">
+                <label class="form-check-label answerFour" for="inline4">4</label>
+            </div>
         </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline4" value="option4">
-            <label class="form-check-label" for="inline4">4</label>
+    </form>
+    <form class="qFive" id="Five">
+        <div class="question question_5 animated fadeInDown">
+            <h2>What is the name of the process in which plants can produce glucose from sunlight?
+            </h2>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions5" id="inline1" value="option1">
+                <label class="form-check-label choiceFiveOne" for="inline1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input answer" type="radio" name="inlineOptions5" id="inline2" value="option2">
+                <label class="form-check-label answerFive" for="inline2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions5" id="inlineRadio3" value="option3">
+                <label class="form-check-label choiceFiveTwo" for="inlineRadio3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineOptions5" id="inline4" value="option4">
+                <label class="form-check-label choiceFiveThree" for="inline4">4</label>
+            </div>
         </div>
-
-    </div>
-
-    <div class="question question_2">
-        <h2>In Organic chemistry, which of the following will react with a nucleophillic keytone?</h2>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline1" value="option1">
-            <label class="form-check-label" for="inline1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline2" value="option2">
-            <label class="form-check-label" for="inline2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline4" value="option4">
-            <label class="form-check-label" for="inline4">4</label>
-        </div>
-    </div>
-
-    <div class="question question_3">
-        <h2>Who popularized the concept of Natural Selection?</h2>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline1" value="option1">
-            <label class="form-check-label" for="inline1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline2" value="option2">
-            <label class="form-check-label" for="inline2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline4" value="option4">
-            <label class="form-check-label" for="inline4">4</label>
-        </div>
-    </div>
-
-    <div class="question question_4">
-        <h2>Millions of years ago, the earth was made up of one land mass that has since seperated due to continental drift. What was this original land mass named?
-        </h2>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline1" value="option1">
-            <label class="form-check-label" for="inline1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline2" value="option2">
-            <label class="form-check-label" for="inline2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline4" value="option4">
-            <label class="form-check-label" for="inline4">4</label>
-        </div>
-    </div>
-
-    <div class="question question_5">
-        <h2>What is the name of the process in which plants can produce glucose from sunlight?
-        </h2>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline1" value="option1">
-            <label class="form-check-label" for="inline1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline2" value="option2">
-            <label class="form-check-label" for="inline2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineOptions" id="inline4" value="option4">
-            <label class="form-check-label" for="inline4">4</label>
-        </div>
-
-    </div>
-
+    </form>
+    <button type="button" onclick="submitTest()">Submit</button>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
