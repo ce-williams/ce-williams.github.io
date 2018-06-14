@@ -34,7 +34,7 @@ var questionAnswers = {
 var user = {
     score: {
         correct: 0,
-        incorrect:0
+        incorrect: 0
     }
 }
 
@@ -90,45 +90,80 @@ $(".choiceFiveThree").text(questionAnswers.five.choiceThree)
 
 
 function submitTest() {
-    console.log ($('input[name=inlineOptions1]:checked').val());
-    console.log ($('input[name=inlineOptions2]:checked').val());
-    uconsole.log  ($('input[name=inlineOptions3]:checked').val());
-    console.log ($('input[name=inlineOptions4]:checked').val());
-    console.log  ($('input[name=inlineOptions5]:checked').val());
+    var u1 = ($('input[name=inlineOptions1]:checked').val());
+    var u2 = ($('input[name=inlineOptions2]:checked').val());
+    var u3 = ($('input[name=inlineOptions3]:checked').val());
+    var u4 = ($('input[name=inlineOptions4]:checked').val());
+    var u5 = ($('input[name=inlineOptions5]:checked').val());
 
-   
+    //console.log(u1, u2, u3, u4, u5);
 
+    if (u1 == "option2") {
+        user.score.correct ++
+    } else {
+        user.score.incorrect ++
+    };
+    if (u2 == "option4") {
+        user.score.correct ++
+    } else  {
+        user.score.incorrect ++
+    }
+    if (u3 == "option1") {
+        user.score.correct ++
+    } else {
+        user.score.incorrect ++
+    }
+    if (u4 == "option4") {
+        user.score.correct ++
+    } else {
+        user.score.incorrect ++
+    }
+    if (u5 == "option2") {
+        user.score.correct ++
+    } else  {
+        user.score.incorrect ++
+    }
+
+    alert ("You had " + user.score.correct + " correct and " + user.score.incorrect + " incorrect.")
+
+    user.score.correct = 0
+    user.score.incorrect = 0
 
 
 };
 
-// if (userChoiceOne = "option2") {
+
+
+
+// if (u1 = "option2") {
 //     user.score.correct ++
 // } else {
 //     user.score.incorrect ++
 // };
-// if (userChoiceTwo = "option4") {
+// if (u2 = "option4") {
 //     user.score.correct ++
 // } else  {
 //     user.score.incorrect ++
 // }
-// if (userChoiceThree = "option1") {
+// if (u3= "option1") {
 //     user.score.correct ++
 // } else {
 //     user.score.incorrect ++
 // }
-// if (userChoiceFour = "option4") {
+// if (u4 = "option4") {
 //     user.score.correct ++
 // } else {
 //     user.score.incorrect ++
 // }
-// if (userChoiceFive = "option2") {
+// if (u5 = "option2") {
 //     user.score.correct ++
 // } else  {
 //     user.score.incorrect ++
 // }
 
 
-//     console.log(userChoiceOne)
-//     console.log(userChoiceTwo)
+//console.log(user.score.correct)
+//console.log(user.score.incorrect)
+
+// alert ("You had " + user.score.correct + " correct and " + user.score.incorrect + " incorrect.")
 
