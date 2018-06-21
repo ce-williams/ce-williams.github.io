@@ -1,28 +1,31 @@
 body {
     margin: 50px;
     padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .gif {
     float: left;
-    margin: 10px;
+    margin: 20px;
 }
 
 .gif-btn {
     color: #fff;
-    background-color: #64949a;
-    margin: 10px 10px;
-    font-weight: bold;
-    border-radius: 5px;
+    background-color: #b16451;
+    padding: 20px;
+    margin: 20px 20px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #474a75;
 }
 
 #add-gif {
     color: #fff;
-    background-color: #64949a;
-    margin: 10px 0px;
-    font-weight: bold;
+    background-color: #6fb151;
+    margin: 20px 0px;
+    
 }
+

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var searchesOffice = ["Michael", "Jim", "Dwight", "Pam", "Oscar", "Kevin"];
+    var searchesOffice = ["Michael Scott", "Jim Halpert", "Dwight Schrute", "Pam Halpert", "Oscar Martinez", "Kevin Malone"];
 
     function displayGifInfo() {
 
