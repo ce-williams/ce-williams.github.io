@@ -1,5 +1,6 @@
+$(document).ready(function)
 
-// var topics = ["Michael", "Jim", "Dwight", "Pam", "Oscar", "Kevin"];
+var topics = ["Michael", "Jim", "Dwight", "Pam", "Oscar", "Kevin"];
 
 
 
@@ -25,6 +26,25 @@ $("button").on("click", function () {
         }
     });
 });
+
+function renderButtons() {
+
+    $("#buttons-view").empty();
+
+    for (var i = 0; i < searches.length; i++) {
+
+        var a = $("<button>");
+
+        a.addClass("gif-btn");
+
+        a.attr("data-name", searches[i]);
+        // Providing the initial button text
+        a.text(searches[i]);
+        // Adding the button to the buttons-view div
+        $("#buttons-view").append(a);
+    }
+}
+
 
 // var keyLC = toLowerCase("DgI71RL9D74xpIehLMBbxFr5zun00MwO");
 // console.log(keyLC);
