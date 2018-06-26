@@ -1,19 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Train Scheduler</title>
     <!-- bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+
     <!-- css animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
         crossorigin="anonymous">
+
     <!-- css file -->
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Train Scheduler</h1>
+            <p class="lead">Check below to see times, or input information into the form.</p>
+        </div>
+    </div>
+    <!-- schedule -->
+    <div class="currentSchedule">
+        <table class="table table-hover table-dark">
+            <!-- headder of schedule  -->
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (minutes)</th>
+                    <th scope="col">Next Arrival</th>
+                </tr>
+            </thead>
+            <!-- body of schedule -->
+            <tbody id="tableBody">
+                <div class="resultsInput">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2"></td>
+                        <td></td>
+                    </tr>
+                </div>
+            </tbody>
+        </table>
+    </div>
+<!-- add train to schedule -->
+    <div class="addTrain">
+        <form>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Train Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Destination</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput3">First Train Time</label>
+                <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput4">Frequency</label>
+                <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="input">
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+
+    </div>
 
 
 
@@ -31,8 +100,10 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- local js file -->
     <script src="assets/javascript/app.js"></script>
 
