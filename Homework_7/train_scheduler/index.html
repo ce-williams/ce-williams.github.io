@@ -15,9 +15,20 @@
 
     <!-- css file -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+    <!-- local js file -->
+    <script src="assets/javascript/app.js"></script>
 </head>
 
 <body>
+    
+
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Train Scheduler</h1>
@@ -39,23 +50,23 @@
             <!-- body of schedule -->
             <tbody id="tableBody">
                 <div class="resultsInput">
-                    <tr>
-                        <th scope="row">1</th>
+                    <!-- <tr>
+                        <th scope="row"></th>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
+                        <th scope="row"></th>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <th scope="row">3</th>
+                        <th scope="row"></th>
                         <td colspan="2"></td>
                         <td></td>
-                    </tr>
+                    </tr> -->
                 </div>
             </tbody>
         </table>
@@ -79,7 +90,7 @@
                 <label for="formGroupExampleInput4">Frequency</label>
                 <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="input">
             </div>
-            <button class="btn btn-primary" type="submit">Submit form</button>
+            <button type="button" class="btn btn-primary" type="submit">Submit form</button>
         </form>
 
     </div>
@@ -101,11 +112,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- local js file -->
-    <script src="assets/javascript/app.js"></script>
+    
 
 </body>
 
