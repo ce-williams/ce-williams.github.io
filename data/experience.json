@@ -1,0 +1,46 @@
+{
+  "name":"Curtis Williams",
+  "title":"Senior GTM Systems Engineer",
+  "location":"Denver, Colorado",
+  "summary":"GTM systems engineer working across Salesforce, revenue operations, CI/CD, integrations, and AI-assisted tooling.",
+  "profileUrl":"https://www.linkedin.com/in/ce-williams/",
+  "sourceUrl":"https://www.linkedin.com/in/ce-williams/details/experience/",
+  "reviewedAt":"2026-10-20",
+  "sourceNote":"Roles, dates, and achievements transcribed and summarized from the user's LinkedIn profile, reviewed October 20, 2026. Education and certifications come from the profile's About section. No personal contact details are included.",
+  "highlights":[
+    {"value":"2","label":"Claude Code tools shipped for team use"},
+    {"value":"81.5%","label":"reduction in unwanted account creation"},
+    {"value":"Copado + GitHub","label":"Salesforce release pipeline migration"}
+  ],
+  "roles":[
+    {"company":"Fivetran","title":"Senior GTM Systems Engineer","start":"2024-04","end":null,"dates":"Apr 2024 – Present","location":"Remote · Denver, Colorado","highlights":[
+      "Built two Claude Code skills used by the team to edit LeanData routing graphs with structural validation and explain routing decisions.",
+      "Redesigned LeanData and Salesforce lead routing for single-digit-second processing; reduced unwanted account creation by 81.5% (4,879 accounts avoided).",
+      "Led the migration to a Copado and GitHub deployment pipeline across Salesforce and revenue systems, supporting releases across multiple environments.",
+      "Delivered Salesforce–Rocketlane integration and Census enablement; prototyped incident-response workflows using Dust, Glean, and LLM tools."
+    ],"cvExtra":["Reduced administrative permissions and retired unused Salesforce objects, fields, and automations as part of governance and technical-debt work.","Resolved an end-of-quarter CPQ outage in under an hour and delivered an address-validation component that reconciled a $2M discrepancy."]},
+    {"company":"Transcarent","title":"Software Engineer II","start":"2021-11","end":"2024-04","dates":"Nov 2021 – Apr 2024","location":"Remote","highlights":[
+      "Developed Salesforce integrations, Apex service classes, triggers, and Flow automations across opportunity, product, and billing workflows.",
+      "Worked with Marketing on Salesforce Account Engagement and led the 2023 internal hackathon."
+    ],"cvExtra":["Contributed to roadmap planning, testing, deployment strategy, and technical-debt management."]},
+    {"company":"Vantage Point Consulting","title":"Salesforce Developer","start":"2021-04","end":"2021-10","dates":"Apr 2021 – Oct 2021","location":"Minneapolis, Minnesota","highlights":[
+      "Led financial-services client projects in developer and architect roles, delivering Apex, Visualforce, LWC, Aura, and Salesforce automation."
+    ],"cvExtra":["Translated stakeholder requirements into technical specifications and managed testing and deployments across environments."]},
+    {"company":"Boom Lab / Threebridge","title":"Associate Software Engineer","start":"2020-01","end":"2021-04","dates":"Jan 2020 – Apr 2021","location":"Minneapolis–St. Paul","highlights":[
+      "Client assignments: Salesforce development at Cantel Medical (Oct 2020–Apr 2021), and product-configuration engineering at Andersen Corporation (Jan–Sep 2020)."
+    ],"cvExtra":["At Cantel, delivered Apex, Visualforce, Aura, and data automation. At Andersen, developed product-configuration code, test plans, and deployment documentation."]},
+    {"company":"Target","title":"Sr Specialist, Space and Presentation","start":"2018-04","end":"2020-01","dates":"Apr 2018 – Jan 2020","location":"Minneapolis, Minnesota","earlier":true,"highlights":[
+      "Progressed from Space and Presentation Coordinator to Senior Specialist in July 2018. Developed store layouts and coordinated merchandising work across large store programs.",
+      "Partnered on the launch of three apparel brands across more than 1,000 stores."
+    ]},
+    {"company":"SSQTCH, LLC","title":"Co-Founder","start":"2015-06","end":"2017-06","dates":"Jun 2015 – Jun 2017","location":"Minnesota","earlier":true,"highlights":[
+      "Co-founded a video and film production company. Worked on client development, video marketing, editing, and creative projects, including work with Red Bull."
+    ]}
+  ],
+  "skills":["Salesforce","Apex","Flow","Salesforce CPQ","LeanData","Copado","GitHub","Census","API integrations","Claude Code","Dust","Glean"],
+  "education":[
+    {"credential":"B.A., Biology","institution":"College of Saint Benedict & Saint John’s University"},
+    {"credential":"Full Stack Web Development Certificate","institution":"University of Minnesota"}
+  ],
+  "certifications":["Salesforce Certified AI Associate","Salesforce Certified Platform App Builder","Salesforce Certified Administrator","LeanData Fundamentals"]
+}

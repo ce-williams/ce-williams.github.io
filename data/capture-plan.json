@@ -1,0 +1,201 @@
+[
+  {
+    "slug": "market-intelligence",
+    "baseUrl": "http://127.0.0.1:4310/market-intelligence/",
+    "urlEnv": "MARKET_URL",
+    "source": "Local market-intelligence-dashboard checkout of ce-williams/Market-Intelligence, clean HEAD 95cbf54. Static HTML reads the repository\u2019s exported historical snapshots.",
+    "dataNote": "Fresh browser context with no user holdings or saved research. Bundled historical price snapshot; all portfolio values remain empty unless entered through the real UI. No live trade execution.",
+    "screenshots": [
+      {
+        "id": "mi-01-overview",
+        "path": "./",
+        "ready": "#content"
+      },
+      {
+        "id": "mi-02-scanner",
+        "steps": [
+          {
+            "click": "button[data-view=\"opportunities\"]"
+          }
+        ],
+        "text": "Opportunity scanner"
+      },
+      {
+        "id": "mi-03-hypothesis-lab",
+        "steps": [
+          {
+            "click": "button[data-view=\"hypotheses\"]"
+          }
+        ],
+        "ready": "#hyp-form"
+      },
+      {
+        "id": "mi-04-portfolio-risk",
+        "steps": [
+          {
+            "click": "button[data-view=\"portfolio\"]"
+          }
+        ],
+        "ready": "#portfolio-form"
+      }
+    ]
+  },
+  {
+    "slug": "referral",
+    "baseUrl": "http://127.0.0.1:4310/referral/",
+    "urlEnv": "REFERRAL_URL",
+    "source": "Existing local Next.js static export, repo HEAD db3959bc0400071401bf714553a4beada354c986.",
+    "dataNote": "Fresh browser context; bundled synthetic Technology workspace. Deterministic scoring; no external job listings or AI service connected.",
+    "screenshots": [
+      {
+        "id": "referral-01-overview",
+        "path": "./",
+        "text": "Good morning, Alex."
+      },
+      {
+        "id": "referral-02-fit-breakdown",
+        "steps": [
+          {
+            "click": ".shortlist-row:first-child"
+          }
+        ],
+        "text": "Why it surfaced"
+      },
+      {
+        "id": "referral-03-profile",
+        "steps": [
+          {
+            "button": "Close opportunity details"
+          },
+          {
+            "button": "Career profile"
+          }
+        ],
+        "text": "Career profile"
+      },
+      {
+        "id": "referral-04-opportunities",
+        "steps": [
+          {
+            "button": "Opportunities"
+          }
+        ],
+        "text": "Roles with a reason"
+      }
+    ]
+  },
+  {
+    "slug": "powderline",
+    "baseUrl": "http://127.0.0.1:4310/powderline/",
+    "urlEnv": "POWDERLINE_URL",
+    "source": "Local static working tree, repo HEAD 53596d529d1471fcd165321dc4da349309c9e7e5.",
+    "dataNote": "Actual camera source images at capture time, including nighttime views. Feed availability varies. Reports and road conditions remain explicitly unconnected; no substituted images.",
+    "screenshots": [
+      {
+        "id": "powderline-01-camera-wall",
+        "path": "./",
+        "ready": ".camera-panel img"
+      },
+      {
+        "id": "powderline-02-resort-filter",
+        "steps": [
+          {
+            "select": "#resort-filter",
+            "value": "Copper Mountain"
+          },
+          {
+            "scroll": "#mountain-wall"
+          }
+        ]
+      },
+      {
+        "id": "powderline-03-camera-focus",
+        "steps": [
+          {
+            "select": "#resort-filter",
+            "value": "all"
+          },
+          {
+            "click": "#camera-only"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "easyecom",
+    "baseUrl": "http://127.0.0.1:4310/EasyEcom/",
+    "urlEnv": "EASYECOM_URL",
+    "source": "Existing local Next.js POC static export, repo HEAD c0d795e842fc96381e66f8d67441d3c0f26227a6.",
+    "dataNote": "Apr\u00e8s Club concept artwork and illustrative catalog. Demo bag only; checkout and payments disabled.",
+    "screenshots": [
+      {
+        "id": "easyecom-01-storefront",
+        "path": "./",
+        "text": "GOOD VIBES."
+      },
+      {
+        "id": "easyecom-02-collection",
+        "path": "collections/ski-culture/",
+        "text": "Lift tickets"
+      },
+      {
+        "id": "easyecom-03-product",
+        "path": "products/mentally-on-a-chairlift/",
+        "ready": "h1"
+      },
+      {
+        "id": "easyecom-04-bag",
+        "path": "./",
+        "steps": [
+          {
+            "click": "button:has-text('Quick add') >> nth=0"
+          }
+        ],
+        "ready": "dialog[open]"
+      }
+    ]
+  },
+  {
+    "slug": "simpleslp",
+    "baseUrl": "http://127.0.0.1:4312/",
+    "urlEnv": "SIMPLESLP_URL",
+    "source": "Isolated local source copy, repo HEAD 48c8649d8e262acb364ca01511cfbbdf92aee22b; dependency symlink to original checkout.",
+    "dataNote": "Freshly generated synthetic seed database, three fictional patients. Mock AI provider default; prototype only, not validated for clinical use.",
+    "screenshots": [
+      {
+        "id": "slp-01-case-overview",
+        "path": "/cases",
+        "discoverCase": true,
+        "text": "Patient A"
+      },
+      {
+        "id": "slp-02-goals",
+        "casePage": true,
+        "steps": [
+          {
+            "button": "Goals",
+            "exact": false
+          }
+        ],
+        "text": "Goals"
+      },
+      {
+        "id": "slp-03-visits",
+        "casePage": true,
+        "steps": [
+          {
+            "button": "Visits",
+            "exact": false
+          }
+        ],
+        "text": "Visits"
+      },
+      {
+        "id": "slp-04-outcomes",
+        "path": "/insights",
+        "text": "Outcome Intelligence"
+      }
+    ]
+  }
+]

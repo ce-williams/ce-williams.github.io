@@ -1,0 +1,268 @@
+[
+  {
+    "project": "referral",
+    "id": "referral-01-overview",
+    "url": "http://127.0.0.1:4310/referral/",
+    "capturedAt": "2026-10-20T01:23:30.989Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Referral \u2014 Your next move, made clearer",
+    "dataNote": "Fresh browser context; bundled synthetic Technology workspace. Deterministic scoring; no external job listings or AI service connected.",
+    "source": "Existing local Next.js static export, repo HEAD db3959bc0400071401bf714553a4beada354c986.",
+    "bytes": 149086
+  },
+  {
+    "project": "referral",
+    "id": "referral-02-fit-breakdown",
+    "url": "http://127.0.0.1:4310/referral/",
+    "capturedAt": "2026-10-20T01:23:31.664Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Referral \u2014 Your next move, made clearer",
+    "dataNote": "Fresh browser context; bundled synthetic Technology workspace. Deterministic scoring; no external job listings or AI service connected.",
+    "source": "Existing local Next.js static export, repo HEAD db3959bc0400071401bf714553a4beada354c986.",
+    "bytes": 175314
+  },
+  {
+    "project": "referral",
+    "id": "referral-03-profile",
+    "url": "http://127.0.0.1:4310/referral/",
+    "capturedAt": "2026-10-20T01:23:32.363Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Referral \u2014 Your next move, made clearer",
+    "dataNote": "Fresh browser context; bundled synthetic Technology workspace. Deterministic scoring; no external job listings or AI service connected.",
+    "source": "Existing local Next.js static export, repo HEAD db3959bc0400071401bf714553a4beada354c986.",
+    "bytes": 135001
+  },
+  {
+    "project": "referral",
+    "id": "referral-04-opportunities",
+    "url": "http://127.0.0.1:4310/referral/",
+    "capturedAt": "2026-10-20T01:23:33.009Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Referral \u2014 Your next move, made clearer",
+    "dataNote": "Fresh browser context; bundled synthetic Technology workspace. Deterministic scoring; no external job listings or AI service connected.",
+    "source": "Existing local Next.js static export, repo HEAD db3959bc0400071401bf714553a4beada354c986.",
+    "bytes": 103989
+  },
+  {
+    "project": "powderline",
+    "id": "powderline-01-camera-wall",
+    "url": "http://127.0.0.1:4310/powderline/",
+    "capturedAt": "2026-10-20T05:55:29.735Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "POWDERLINE \u2014 Colorado mountain intelligence",
+    "dataNote": "Actual camera source images at capture time, including nighttime views. Feed availability varies. Reports and road conditions remain explicitly unconnected; no substituted images.",
+    "source": "Local static working tree, repo HEAD 53596d529d1471fcd165321dc4da349309c9e7e5.",
+    "bytes": 666055
+  },
+  {
+    "project": "powderline",
+    "id": "powderline-02-resort-filter",
+    "url": "http://127.0.0.1:4310/powderline/",
+    "capturedAt": "2026-10-20T05:55:31.974Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "POWDERLINE \u2014 Colorado mountain intelligence",
+    "dataNote": "Actual camera source images at capture time, including nighttime views. Feed availability varies. Reports and road conditions remain explicitly unconnected; no substituted images.",
+    "source": "Local static working tree, repo HEAD 53596d529d1471fcd165321dc4da349309c9e7e5.",
+    "bytes": 958512
+  },
+  {
+    "project": "powderline",
+    "id": "powderline-03-camera-focus",
+    "url": "http://127.0.0.1:4310/powderline/",
+    "capturedAt": "2026-10-20T05:55:34.187Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "POWDERLINE \u2014 Colorado mountain intelligence",
+    "dataNote": "Actual camera source images at capture time, including nighttime views. Feed availability varies. Reports and road conditions remain explicitly unconnected; no substituted images.",
+    "source": "Local static working tree, repo HEAD 53596d529d1471fcd165321dc4da349309c9e7e5.",
+    "bytes": 680478
+  },
+  {
+    "project": "easyecom",
+    "id": "easyecom-01-storefront",
+    "url": "http://127.0.0.1:4310/EasyEcom/",
+    "capturedAt": "2026-10-20T13:33:32.992Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Apr\u00e8s Club \u2014 Less serious. More outside.",
+    "dataNote": "Apr\u00e8s Club concept artwork and illustrative catalog. Demo bag only; checkout and payments disabled.",
+    "source": "Existing local Next.js POC static export, repo HEAD c0d795e842fc96381e66f8d67441d3c0f26227a6.",
+    "bytes": 295403
+  },
+  {
+    "project": "easyecom",
+    "id": "easyecom-02-collection",
+    "url": "http://127.0.0.1:4310/EasyEcom/collections/ski-culture/",
+    "capturedAt": "2026-10-20T13:33:34.194Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Lift tickets & life choices | Apr\u00e8s Club",
+    "dataNote": "Apr\u00e8s Club concept artwork and illustrative catalog. Demo bag only; checkout and payments disabled.",
+    "source": "Existing local Next.js POC static export, repo HEAD c0d795e842fc96381e66f8d67441d3c0f26227a6.",
+    "bytes": 160703
+  },
+  {
+    "project": "easyecom",
+    "id": "easyecom-03-product",
+    "url": "http://127.0.0.1:4310/EasyEcom/products/mentally-on-a-chairlift/",
+    "capturedAt": "2026-10-20T13:33:35.386Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Mentally on a Chairlift | Apr\u00e8s Club",
+    "dataNote": "Apr\u00e8s Club concept artwork and illustrative catalog. Demo bag only; checkout and payments disabled.",
+    "source": "Existing local Next.js POC static export, repo HEAD c0d795e842fc96381e66f8d67441d3c0f26227a6.",
+    "bytes": 142049
+  },
+  {
+    "project": "easyecom",
+    "id": "easyecom-04-bag",
+    "url": "http://127.0.0.1:4310/EasyEcom/",
+    "capturedAt": "2026-10-20T13:33:36.679Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Apr\u00e8s Club \u2014 Less serious. More outside.",
+    "dataNote": "Apr\u00e8s Club concept artwork and illustrative catalog. Demo bag only; checkout and payments disabled.",
+    "source": "Existing local Next.js POC static export, repo HEAD c0d795e842fc96381e66f8d67441d3c0f26227a6.",
+    "bytes": 280542
+  },
+  {
+    "project": "simpleslp",
+    "id": "slp-01-case-overview",
+    "url": "http://127.0.0.1:4312/cases/nNINLefW3KXjeVgygFlsE",
+    "capturedAt": "2026-10-20T13:33:38.581Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "SimpleSLP \u2014 Clinical Workspace",
+    "dataNote": "Freshly generated synthetic seed database, three fictional patients. Mock AI provider default; prototype only, not validated for clinical use.",
+    "source": "Isolated local source copy, repo HEAD 48c8649d8e262acb364ca01511cfbbdf92aee22b; dependency symlink to original checkout.",
+    "bytes": 94709
+  },
+  {
+    "project": "simpleslp",
+    "id": "slp-02-goals",
+    "url": "http://127.0.0.1:4312/cases/nNINLefW3KXjeVgygFlsE",
+    "capturedAt": "2026-10-20T13:33:40.026Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "SimpleSLP \u2014 Clinical Workspace",
+    "dataNote": "Freshly generated synthetic seed database, three fictional patients. Mock AI provider default; prototype only, not validated for clinical use.",
+    "source": "Isolated local source copy, repo HEAD 48c8649d8e262acb364ca01511cfbbdf92aee22b; dependency symlink to original checkout.",
+    "bytes": 91234
+  },
+  {
+    "project": "simpleslp",
+    "id": "slp-03-visits",
+    "url": "http://127.0.0.1:4312/cases/nNINLefW3KXjeVgygFlsE",
+    "capturedAt": "2026-10-20T13:34:09.833Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "SimpleSLP \u2014 Clinical Workspace",
+    "dataNote": "Freshly generated synthetic seed database, three fictional patients. Mock AI provider default; prototype only, not validated for clinical use.",
+    "source": "Isolated local source copy, repo HEAD 48c8649d8e262acb364ca01511cfbbdf92aee22b; dependency symlink to original checkout.",
+    "bytes": 87558
+  },
+  {
+    "project": "simpleslp",
+    "id": "slp-04-outcomes",
+    "url": "http://127.0.0.1:4312/insights",
+    "capturedAt": "2026-10-20T13:34:11.401Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "SimpleSLP \u2014 Clinical Workspace",
+    "dataNote": "Freshly generated synthetic seed database, three fictional patients. Mock AI provider default; prototype only, not validated for clinical use.",
+    "source": "Isolated local source copy, repo HEAD 48c8649d8e262acb364ca01511cfbbdf92aee22b; dependency symlink to original checkout.",
+    "bytes": 61369
+  },
+  {
+    "project": "market-intelligence",
+    "id": "mi-01-overview",
+    "url": "http://127.0.0.1:4310/market-intelligence/",
+    "capturedAt": "2026-10-20T19:56:27.785Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Signal \u2014 Market Intelligence",
+    "dataNote": "Fresh browser context with no user holdings or saved research. Bundled historical price snapshot; all portfolio values remain empty unless entered through the real UI. No live trade execution.",
+    "source": "Local market-intelligence-dashboard checkout of ce-williams/Market-Intelligence, clean HEAD 95cbf54. Static HTML reads the repository\u2019s exported historical snapshots.",
+    "bytes": 273129
+  },
+  {
+    "project": "market-intelligence",
+    "id": "mi-02-scanner",
+    "url": "http://127.0.0.1:4310/market-intelligence/",
+    "capturedAt": "2026-10-20T19:56:28.570Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Signal \u2014 Market Intelligence",
+    "dataNote": "Fresh browser context with no user holdings or saved research. Bundled historical price snapshot; all portfolio values remain empty unless entered through the real UI. No live trade execution.",
+    "source": "Local market-intelligence-dashboard checkout of ce-williams/Market-Intelligence, clean HEAD 95cbf54. Static HTML reads the repository\u2019s exported historical snapshots.",
+    "bytes": 215577
+  },
+  {
+    "project": "market-intelligence",
+    "id": "mi-03-hypothesis-lab",
+    "url": "http://127.0.0.1:4310/market-intelligence/",
+    "capturedAt": "2026-10-20T19:56:29.220Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Signal \u2014 Market Intelligence",
+    "dataNote": "Fresh browser context with no user holdings or saved research. Bundled historical price snapshot; all portfolio values remain empty unless entered through the real UI. No live trade execution.",
+    "source": "Local market-intelligence-dashboard checkout of ce-williams/Market-Intelligence, clean HEAD 95cbf54. Static HTML reads the repository\u2019s exported historical snapshots.",
+    "bytes": 125178
+  },
+  {
+    "project": "market-intelligence",
+    "id": "mi-04-portfolio-risk",
+    "url": "http://127.0.0.1:4310/market-intelligence/",
+    "capturedAt": "2026-10-20T19:56:29.875Z",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "title": "Signal \u2014 Market Intelligence",
+    "dataNote": "Fresh browser context with no user holdings or saved research. Bundled historical price snapshot; all portfolio values remain empty unless entered through the real UI. No live trade execution.",
+    "source": "Local market-intelligence-dashboard checkout of ce-williams/Market-Intelligence, clean HEAD 95cbf54. Static HTML reads the repository\u2019s exported historical snapshots.",
+    "bytes": 114312
+  }
+]

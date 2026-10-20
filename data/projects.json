@@ -1,0 +1,222 @@
+[
+  {
+    "slug": "market-intelligence",
+    "name": "Market Intelligence",
+    "category": "Market research",
+    "filter": "data",
+    "maturity": "Local research prototype",
+    "summary": "A local market research dashboard with stock screens, hypothesis tracking, and manual portfolio analysis.",
+    "stack": [
+      "Python",
+      "DuckDB",
+      "JavaScript"
+    ],
+    "sourceUrl": "https://github.com/ce-williams/Market-Intelligence",
+    "liveUrl": null,
+    "why": "Brings historical prices, company context, and saved research into one workspace.",
+    "technical": "A local DuckDB warehouse retains dated observations and ingestion provenance. The browser reads exported snapshots and provides transparent screens, versioned hypothesis logs, and local portfolio inputs.",
+    "demonstrates": "Local data storage, dated source snapshots, and calculations that can be inspected.",
+    "boundary": "Research-only historical snapshots. No broker or trade execution; option chains, implied volatility, and option mark-to-market are not connected.",
+    "screenshots": [
+      {
+        "id": "mi-01-overview",
+        "caption": "Market overview",
+        "alt": "Market Intelligence overview with stored market snapshot, recent signals, and explicit data coverage counts.",
+        "note": "Local historical price snapshot · coverage and freshness shown in the UI"
+      },
+      {
+        "id": "mi-02-scanner",
+        "caption": "Opportunity scanner",
+        "alt": "Market Intelligence scanner displaying transparent candidate screens and measured inputs.",
+        "note": "Research candidates from available stored observations"
+      },
+      {
+        "id": "mi-03-hypothesis-lab",
+        "caption": "Hypothesis lab",
+        "alt": "Market Intelligence hypothesis lab with a falsifiable cybersecurity thesis, candidate symbols, benchmark, horizon, and invalidation condition.",
+        "note": "Browser-local hypothesis logs and descriptive historical event studies"
+      },
+      {
+        "id": "mi-04-portfolio-risk",
+        "caption": "Portfolio risk workspace",
+        "alt": "Market Intelligence portfolio workspace with manual position entry, share value, put collateral, and covered-call coverage; no private holdings entered.",
+        "note": "Fresh browser state · manual portfolio inputs · no broker connection"
+      }
+    ]
+  },
+  {
+    "slug": "referral",
+    "name": "Referral",
+    "category": "Career planning",
+    "filter": "workflow",
+    "maturity": "Browser-local demo",
+    "summary": "A career planning workspace that compares opportunities against goals, experience, and saved evidence.",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "React"
+    ],
+    "sourceUrl": "https://github.com/ce-williams/referral",
+    "liveUrl": "https://ce-williams.github.io/referral/",
+    "why": "Keeps career profiles, job opportunities, contacts, and next steps in one place.",
+    "technical": "Deterministic scoring exposes its component breakdown, matched evidence, and gaps. Isolated industry workspaces persist in browser storage.",
+    "demonstrates": "Configurable scoring, visible evidence gaps, and separate browser-local workspaces.",
+    "boundary": "Synthetic profiles and opportunities. Login, billing, live research sources, and external AI drafting are not connected.",
+    "screenshots": [
+      {
+        "id": "referral-01-overview",
+        "caption": "Career overview",
+        "alt": "Referral overview with a synthetic career profile, opportunity shortlist, and a recommended next action.",
+        "note": "Synthetic Technology workspace · browser-local demo"
+      },
+      {
+        "id": "referral-02-fit-breakdown",
+        "caption": "Explainable role alignment",
+        "alt": "Referral opportunity detail drawer showing role alignment, scoring components, evidence matches, and gaps.",
+        "note": "Inspectable scoring · no hiring outcome prediction"
+      },
+      {
+        "id": "referral-03-profile",
+        "caption": "Profile, goals & evidence",
+        "alt": "Referral career profile showing goals and saved evidence for the fictional demo user.",
+        "note": "Evidence grounds the opportunity workflow"
+      },
+      {
+        "id": "referral-04-opportunities",
+        "caption": "Opportunity pipeline",
+        "alt": "Referral opportunity workspace with synthetic roles and pipeline filters.",
+        "note": "A focused shortlist with visible next actions"
+      }
+    ]
+  },
+  {
+    "slug": "powderline",
+    "name": "Powderline",
+    "category": "Camera feeds & conditions",
+    "filter": "data",
+    "maturity": "Static utility prototype",
+    "summary": "A Colorado resort camera dashboard with resort filters, on-demand video, and links to official conditions.",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "Camera feeds"
+    ],
+    "sourceUrl": "https://github.com/ce-williams/powderline",
+    "liveUrl": null,
+    "why": "Lets users check cameras across several resorts without opening each provider separately.",
+    "technical": "A curated camera catalog handles provider differences, on-demand video, resort filtering, and refresh failures while retaining the last successful image.",
+    "demonstrates": "Multiple camera providers, refresh handling, and clear states for unavailable data.",
+    "boundary": "Camera availability depends on providers. Resort report adapters, live road conditions, accounts, and alerts are not connected.",
+    "screenshots": [
+      {
+        "id": "powderline-01-camera-wall",
+        "caption": "Mountain camera wall",
+        "alt": "Powderline interface with real nighttime resort camera images and clearly marked unavailable snow reports.",
+        "note": "Real source images · nighttime snapshot from October 19, 2026"
+      },
+      {
+        "id": "powderline-02-resort-filter",
+        "caption": "Resort-specific view",
+        "alt": "Powderline camera wall filtered to Copper Mountain using the resort selector.",
+        "note": "Copper Mountain · availability varies by camera provider"
+      },
+      {
+        "id": "powderline-03-camera-focus",
+        "caption": "Camera-focused layout",
+        "alt": "Powderline camera-only mode displaying resort camera images in a focused wall.",
+        "note": "Actual source feeds · no replacement imagery"
+      }
+    ]
+  },
+  {
+    "slug": "easyecom",
+    "name": "EasyEcom",
+    "category": "Commerce",
+    "filter": "commerce",
+    "maturity": "Storefront design demo",
+    "summary": "A configurable storefront with collection pages, product variants, and a demonstration shopping bag.",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "React"
+    ],
+    "sourceUrl": "https://github.com/ce-williams/EasyEcom",
+    "liveUrl": "https://ce-williams.github.io/EasyEcom/",
+    "why": "Tests a shared storefront against different brand and catalog configurations.",
+    "technical": "Typed brand configuration separates catalog and identity from commerce components. Variant validation and integer pricing keep the demonstration bag consistent.",
+    "demonstrates": "Typed brand configuration, variant validation, and reusable shopping components.",
+    "boundary": "Concept artwork and illustrative catalog. Captured in POC mode with simulated checkout and payments disabled.",
+    "screenshots": [
+      {
+        "id": "easyecom-01-storefront",
+        "caption": "Après Club storefront",
+        "alt": "EasyEcom Après Club homepage with Colorado concept sticker artwork and storefront navigation.",
+        "note": "Local POC export · concept brand and illustrative catalog"
+      },
+      {
+        "id": "easyecom-02-collection",
+        "caption": "Collection browsing",
+        "alt": "EasyEcom ski culture collection page showing concept products and their prices.",
+        "note": "Brand configuration drives the collection experience"
+      },
+      {
+        "id": "easyecom-03-product",
+        "caption": "Product & finish selection",
+        "alt": "EasyEcom product detail page for Mentally on a Chairlift with artwork and finish selection.",
+        "note": "Product detail and variant selection"
+      },
+      {
+        "id": "easyecom-04-bag",
+        "caption": "Demonstration bag",
+        "alt": "EasyEcom bag with a selected concept product, quantity controls, and demo checkout context.",
+        "note": "Demonstration bag · no payment or live order"
+      }
+    ]
+  },
+  {
+    "slug": "simpleslp",
+    "name": "SimpleSLP",
+    "category": "Clinical workflow prototype",
+    "filter": "workflow",
+    "maturity": "Synthetic-data prototype",
+    "summary": "A speech-language therapy prototype for patient records, goals, visits, and AI-assisted drafts.",
+    "stack": [
+      "Next.js",
+      "SQLite",
+      "Drizzle",
+      "Mock AI"
+    ],
+    "sourceUrl": "https://github.com/ce-williams/simpleSLP",
+    "liveUrl": null,
+    "why": "Connects each case to its goals, interventions, and recorded outcomes.",
+    "technical": "A relational case-to-outcome model supports auditable records and draft-to-approval document workflows. AI drafts default to a deterministic offline provider.",
+    "demonstrates": "Relational records, draft approval workflows, and an offline mock AI provider.",
+    "boundary": "Fresh synthetic patient records only. Mock AI is the default; this prototype is not validated for clinical use.",
+    "screenshots": [
+      {
+        "id": "slp-01-case-overview",
+        "caption": "Case workspace",
+        "alt": "SimpleSLP fictional Patient A case overview with care context and workflow navigation.",
+        "note": "Fresh synthetic seed data · no real patient information"
+      },
+      {
+        "id": "slp-02-goals",
+        "caption": "Goal tracking",
+        "alt": "SimpleSLP goals tab showing baseline and target information for a synthetic patient.",
+        "note": "Recorded goals connected to an individual case"
+      },
+      {
+        "id": "slp-03-visits",
+        "caption": "Visits & interventions",
+        "alt": "SimpleSLP visits tab showing synthetic sessions, intervention details, and outcomes.",
+        "note": "Intervention-to-outcome traceability"
+      },
+      {
+        "id": "slp-04-outcomes",
+        "caption": "Outcome intelligence",
+        "alt": "SimpleSLP outcome intelligence view with synthetic caseload counts, goal status, interventions, and recorded sessions.",
+        "note": "Descriptive demo analytics · no validated clinical claims"
+      }
+    ]
+  }
+]

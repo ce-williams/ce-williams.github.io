@@ -1,0 +1,16 @@
+{
+  "name": "curtis-williams-project-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/preview.mjs",
+    "build": "node scripts/build-gallery.mjs && node scripts/build-site.mjs",
+    "capture": "node scripts/capture-projects.mjs",
+    "test": "node scripts/test-gallery.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "sharp": "0.35.5"
+  }
+}
