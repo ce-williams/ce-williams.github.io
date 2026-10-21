@@ -4,13 +4,17 @@ import {readFile,writeFile,stat} from 'node:fs/promises';
 const root=new URL('../',import.meta.url);
 const projects=JSON.parse(await readFile(new URL('data/projects.json',root)));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const src=(p,s)=>`assets/projects/${p.slug}/${s.id}.webp`;
-for(const p of projects) for(const s of p.screenshots) for(const path of [src(p,s),src(p,s).replace('.webp','-720.webp')]) await stat(new URL(path,root));
+const src=(p,s)=>`assets/projects/${p.slug}/${s.asset??`${s.id}.webp`}`;
+const responsiveSrcset=(p,s)=>s.asset?'':` srcset="${src(p,s).replace('.webp','-720.webp')} 720w, ${src(p,s)} 1440w"`;
+for(const p of projects) for(const s of p.screenshots){
+ await stat(new URL(src(p,s),root));
+ if(!s.asset)await stat(new URL(src(p,s).replace('.webp','-720.webp'),root));
+}
 
 const projectVisual=(p,i)=>{
  if(!p.screenshots.length)return `<div class="ps-project-preview" aria-label="${esc(p.name)} project summary"><p>01 / PROJECT</p><h4>${esc(p.name)}</h4><span>${esc(p.maturity)}</span></div>`;
  return `<div class="ps-window"><div class="ps-window-bar"><span class="ps-window-dots" aria-hidden="true">● ● ●</span><span>${esc(p.name)} <span class="ps-window-separator">/</span> ${esc(p.maturity)}</span><a class="ps-expand" data-gallery-open="${p.slug}" href="${src(p,p.screenshots[0])}" aria-label="Open ${esc(p.name)} gallery">Expand <span aria-hidden="true">↗</span></a></div>
- <div class="ps-carousel" tabindex="0" role="region" aria-roledescription="carousel" aria-label="${esc(p.name)} screenshots"><div class="ps-track" id="${p.slug}-slides">${p.screenshots.map((s,j)=>`<figure class="ps-slide" role="group" aria-roledescription="slide" aria-label="${j+1} of ${p.screenshots.length}" data-caption="${esc(s.caption)}" data-note="${esc(s.note)}"><a href="${src(p,s)}" data-image-open="${j}" aria-label="Expand ${esc(s.caption)}"><img src="${src(p,s)}" srcset="${src(p,s).replace('.webp','-720.webp')} 720w, ${src(p,s)} 1440w" sizes="${i===0?'(min-width: 1100px) 760px, (min-width: 700px) 90vw, 100vw':'(min-width: 700px) 45vw, 100vw'}" width="1440" height="960" alt="${esc(s.alt)}" loading="lazy" decoding="async"></a><figcaption><span>${esc(s.caption)}</span><span class="ps-static-count">${String(j+1).padStart(2,'0')} / ${String(p.screenshots.length).padStart(2,'0')}</span></figcaption></figure>`).join('')}</div>
+ <div class="ps-carousel" tabindex="0" role="region" aria-roledescription="carousel" aria-label="${esc(p.name)} screenshots"><div class="ps-track" id="${p.slug}-slides">${p.screenshots.map((s,j)=>`<figure class="ps-slide" role="group" aria-roledescription="slide" aria-label="${j+1} of ${p.screenshots.length}" data-caption="${esc(s.caption)}" data-note="${esc(s.note)}"><a href="${src(p,s)}" data-image-open="${j}" aria-label="Expand ${esc(s.caption)}"><img src="${src(p,s)}"${responsiveSrcset(p,s)} sizes="${i===0?'(min-width: 1100px) 760px, (min-width: 700px) 90vw, 100vw':'(min-width: 700px) 45vw, 100vw'}" width="1440" height="960" alt="${esc(s.alt)}" loading="lazy" decoding="async"></a><figcaption><span>${esc(s.caption)}</span><span class="ps-static-count">${String(j+1).padStart(2,'0')} / ${String(p.screenshots.length).padStart(2,'0')}</span></figcaption></figure>`).join('')}</div>
  <div class="ps-controls" hidden><button type="button" data-prev aria-label="Previous ${esc(p.name)} screenshot" aria-controls="${p.slug}-slides"><span aria-hidden="true">←</span></button><div class="ps-dots" role="group" aria-label="Choose ${esc(p.name)} screenshot">${p.screenshots.map((s,j)=>`<button type="button" data-slide="${j}" aria-label="Show ${esc(s.caption)}" aria-pressed="${j===0}"><span></span></button>`).join('')}</div><button type="button" data-next aria-label="Next ${esc(p.name)} screenshot" aria-controls="${p.slug}-slides"><span aria-hidden="true">→</span></button></div><span class="ps-sr-only ps-slide-status" aria-live="polite" aria-atomic="true"></span></div></div>`;
 };
 

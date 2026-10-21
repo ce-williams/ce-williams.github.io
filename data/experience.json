@@ -18,11 +18,11 @@
       "Reworked lead routing to reduce unwanted account creation by 81.5% (4,879 accounts avoided).",
       "Led the Copado and GitHub release pipeline for Salesforce and revenue systems.",
       "Delivers integrations and data workflows across Salesforce, Rocketlane, Census, BigQuery, and Xactly."
-    ],"cvExtra":["Reduced administrative permissions and retired unused Salesforce objects, fields, and automations as part of governance and technical-debt work.","Resolved an end-of-quarter CPQ outage in under an hour and delivered an address-validation component that reconciled a $2M discrepancy."]},
+    ],"cvHighlights":["Built agent workflows and Claude Code skills for LeanData routing, Salesforce CPQ product configuration, metadata analysis, and deployment troubleshooting.","Reworked LeanData and Salesforce routing to sub-second processing; reduced unwanted account creation by 81.5% (4,879 accounts avoided).","Led the transition to a Copado and GitHub deployment pipeline across Salesforce and revenue systems, supporting multi-environment releases and a zero-downtime fiscal-year launch.","Removed 56 objects, 350+ fields, and 30+ automations; reduced 13 GB of storage and strengthened governance for future integrations.","Reduced System Admin roles from 125 to 61 and cut admin-level permissions by 50%.","Configured Census reverse-ETL syncs, authored BigQuery and Salesforce-history SQL for Xactly compensation, and partnered on dbt models.","Resolved an end-of-quarter CPQ outage in under an hour and delivered address validation that reconciled a $2M discrepancy.","Led Salesforce-Rocketlane integration delivery and used browser-based agents for Salesforce UAT." ]},
     {"company":"Transcarent","title":"Software Engineer II","start":"2021-11","end":"2024-04","dates":"Nov 2021 – Apr 2024","location":"Remote","highlights":[
       "Developed Salesforce integrations, Apex service classes, triggers, and Flow automations across opportunity, product, and billing workflows.",
       "Worked with Marketing on Salesforce Account Engagement and led the 2023 internal hackathon."
-    ],"cvExtra":["Contributed to roadmap planning, testing, deployment strategy, and technical-debt management."]},
+    ],"cvHighlights":["Built and scaled Salesforce integrations during the 98point6 merger using Apex, Flow, and API-driven architecture with HIPAA compliance.","Developed and optimized Apex service classes, triggers, and Flow automations across opportunity, product, and billing workflows.","Partnered with Marketing on Account Engagement automation and led the 2023 internal hackathon.","Contributed 900+ GitHub commits in 2023 and led major repository changes.","Drove roadmap planning, test strategy, and technical-debt reduction with an emphasis on automation reliability."]},
     {"company":"Vantage Point Consulting","title":"Salesforce Developer","start":"2021-04","end":"2021-10","dates":"Apr 2021 – Oct 2021","location":"Minneapolis, Minnesota","highlights":[
       "Led financial-services client projects in developer and architect roles, delivering Apex, Visualforce, LWC, Aura, and Salesforce automation."
     ],"cvExtra":["Translated stakeholder requirements into technical specifications and managed testing and deployments across environments."]},
@@ -37,7 +37,7 @@
       "Co-founded a video and film production company. Worked on client development, video marketing, editing, and creative projects, including work with Red Bull."
     ]}
   ],
-  "skills":["Salesforce","Apex","Flow","Salesforce CPQ","LeanData","Copado","GitHub","Census","API integrations","Claude Code","Dust","Glean"],
+  "skills":["GTM systems architecture","Salesforce","Apex","Flow","Salesforce CPQ","LeanData","Copado","GitHub","Claude Code","ChatGPT","Gemini","API integrations","Census","SQL","dbt","BigQuery","Xactly","Data governance"],
   "education":[
     {"credential":"B.A., Biology","institution":"College of Saint Benedict & Saint John’s University"},
     {"credential":"Full Stack Web Development Certificate","institution":"University of Minnesota"}

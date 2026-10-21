@@ -23,20 +23,20 @@ styles={
 def text(s):
  return escape(s.replace('–','-').replace('—','-').replace('’',"'").replace('↔',' / '))
 def para(s,k='body'):return Paragraph(s,styles[k])
-story=[para(text(info['name']),'name'),para(text(info['title'])+' | Applied AI &amp; Revenue Systems','title'),para('Denver, Colorado | <link href="https://ce-williams.github.io/">ce-williams.github.io</link> | <link href="https://www.linkedin.com/in/ce-williams/">LinkedIn</link>','small'),HRFlowable(width='100%',thickness=.6,color=line),Spacer(1,14),para(text(info['summary'])),para('PLATFORMS & TOOLS','section'),para(text(' / '.join(info['skills'])),'small'),para('PROFESSIONAL EXPERIENCE','section')]
+story=[para(text(info['name']),'name'),para('SENIOR GTM SYSTEMS ENGINEER | AI &amp; REVENUE SYSTEMS ARCHITECT','title'),para('Denver, Colorado | <link href="https://ce-williams.github.io/">ce-williams.github.io</link> | <link href="https://www.linkedin.com/in/ce-williams/">LinkedIn</link> | <link href="https://github.com/ce-williams/">GitHub</link>','small'),HRFlowable(width='100%',thickness=.6,color=line),Spacer(1,14),para('AI-native systems engineer specializing in GTM architecture, Salesforce ecosystems, and agentic workflow design. Builds automation and API-first systems that reduce technical debt and support scale.'),para('CORE SKILLS','section'),para(text(' / '.join(info['skills'])),'small'),para('PROFESSIONAL EXPERIENCE','section')]
 def add_role(r,extra=True):
  title=para(text(r['title'])+' | '+text(r['company']),'role')
  meta=para(text(r['dates'])+' / '+text(r['location']),'meta')
- bullets=[para('- '+text(x),'bullet') for x in r['highlights']+(r.get('cvExtra',[]) if extra else [])]
+ bullets=[para('- '+text(x),'bullet') for x in r.get('cvHighlights',r['highlights']+(r.get('cvExtra',[]) if extra else []))]
  story.append(KeepTogether([title,meta,bullets[0]]));story.extend(bullets[1:]);story.append(Spacer(1,12))
 for r in info['roles'][:2]:add_role(r)
-story.extend([PageBreak(),para('EARLIER EXPERIENCE','section')])
+story.extend([para('EARLIER EXPERIENCE','section')])
 for r in info['roles'][2:]:add_role(r,extra=False)
 story.extend([para('EDUCATION','section')])
 for e in info['education']:story.append(para('<b>'+text(e['credential'])+'</b><br/>'+text(e['institution']),'body'))
-story.extend([para('CERTIFICATIONS','section'),para('<br/>'.join(text(c) for c in info['certifications']),'body'),para('INDEPENDENT PROJECTS','section'),para('Market Intelligence, Referral, Powderline, EasyEcom, and SimpleSLP. Screenshots, implementation details, source repositories, and prototype boundaries at <link href="https://ce-williams.github.io/">ce-williams.github.io</link>.','body')])
+story.extend([para('CERTIFICATIONS','section'),para('<br/>'.join(text(c) for c in info['certifications']),'body')])
 def page_footer(canvas,doc):
- canvas.saveState();canvas.setStrokeColor(line);canvas.line(46,39,566,39);canvas.setFont('Helvetica',7.5);canvas.setFillColor(muted);canvas.drawString(46,25,'Curtis Williams | Career details from LinkedIn | October 2026');canvas.drawRightString(566,25,str(doc.page));canvas.restoreState()
+ canvas.saveState();canvas.setStrokeColor(line);canvas.line(46,39,566,39);canvas.setFont('Helvetica',7.5);canvas.setFillColor(muted);canvas.drawString(46,25,'Curtis Williams | GTM Systems Engineer | October 2026');canvas.drawRightString(566,25,str(doc.page));canvas.restoreState()
 doc=SimpleDocTemplate(str(out),pagesize=(612,792),leftMargin=46,rightMargin=46,topMargin=38,bottomMargin=52,title='Curtis Williams - Professional CV',author='Curtis Williams')
 doc.build(story,onFirstPage=page_footer,onLaterPages=page_footer)
 shutil.copy2(out,ROOT/'assets/curtis-williams-cv.pdf')

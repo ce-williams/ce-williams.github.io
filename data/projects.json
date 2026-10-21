@@ -237,6 +237,28 @@
     "technical": "A static Next.js export uses a local browser repository, rule-driven benefit calculations, and calendar exports. The underlying schema and rules keep benefit periods, enrollment, usage, and reversals explicit.",
     "demonstrates": "Local-first state, transparent rules, deadline prioritization, and calendar export.",
     "boundary": "A fictional demo with invented benefit rules and amounts. It has no issuer connection, bank data, account, or live reminder service.",
-    "screenshots": []
+    "screenshots": [
+      {
+        "id": "perk-01-overview",
+        "asset": "perk-01-overview.svg",
+        "caption": "Portfolio overview",
+        "alt": "PERK portfolio overview with a benefit-value summary, demo cards, and deadline-aware actions.",
+        "note": "Interface preview based on the live demo · fictional benefit scenarios"
+      },
+      {
+        "id": "perk-02-benefits",
+        "asset": "perk-02-benefits.svg",
+        "caption": "Benefit tracking",
+        "alt": "PERK benefit tracking view with enrollment state, remaining value, and a transparent calculation panel.",
+        "note": "Interface preview based on the live demo · all amounts are fictional"
+      },
+      {
+        "id": "perk-03-calendar",
+        "asset": "perk-03-calendar.svg",
+        "caption": "Benefit calendar",
+        "alt": "PERK benefit calendar showing monthly resets and a calendar export option.",
+        "note": "Interface preview based on the live demo · browser-local calendar export"
+      }
+    ]
   }
 ]
