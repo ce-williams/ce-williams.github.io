@@ -1,6 +1,7 @@
 [
   {
     "slug": "market-intelligence",
+    "order": 6,
     "name": "Market Intelligence",
     "category": "Market research",
     "filter": "data",
@@ -46,6 +47,7 @@
   },
   {
     "slug": "referral",
+    "order": 1,
     "name": "Referral",
     "category": "Career planning",
     "filter": "workflow",
@@ -91,6 +93,7 @@
   },
   {
     "slug": "powderline",
+    "order": 4,
     "name": "Powderline",
     "category": "Camera feeds & conditions",
     "filter": "data",
@@ -130,6 +133,7 @@
   },
   {
     "slug": "easyecom",
+    "order": 3,
     "name": "EasyEcom",
     "category": "Commerce",
     "filter": "commerce",
@@ -175,6 +179,7 @@
   },
   {
     "slug": "simpleslp",
+    "order": 5,
     "name": "SimpleSLP",
     "category": "Clinical workflow prototype",
     "filter": "workflow",
@@ -221,6 +226,7 @@
   },
   {
     "slug": "perk",
+    "order": 2,
     "name": "PERK",
     "category": "Personal finance",
     "filter": "workflow",

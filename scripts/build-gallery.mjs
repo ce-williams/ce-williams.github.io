@@ -2,7 +2,7 @@ import {renderExperience} from './render-experience.mjs';
 import {readFile,writeFile,stat} from 'node:fs/promises';
 
 const root=new URL('../',import.meta.url);
-const projects=JSON.parse(await readFile(new URL('data/projects.json',root)));
+const projects=JSON.parse(await readFile(new URL('data/projects.json',root))).sort((a,b)=>(a.order??Number.MAX_SAFE_INTEGER)-(b.order??Number.MAX_SAFE_INTEGER));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const src=(p,s)=>`assets/projects/${p.slug}/${s.asset??`${s.id}.webp`}`;
 const responsiveSrcset=(p,s)=>s.asset?'':` srcset="${src(p,s).replace('.webp','-720.webp')} 720w, ${src(p,s)} 1440w"`;
