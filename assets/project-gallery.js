@@ -38,6 +38,7 @@ for (const root of document.querySelectorAll('.project-showcase')) {
   const carousel=card.querySelector('.ps-carousel');
   const slides=[...card.querySelectorAll('.ps-slide')];
   const dots=[...card.querySelectorAll('[data-slide]')];
+  if (!track || !carousel || !slides.length) continue;
   const state={card,track,slides,index:0};states.set(card.dataset.project,state);
   const update=()=>{
    if(!track.clientWidth)return;
@@ -89,7 +90,7 @@ for (const root of document.querySelectorAll('.project-showcase')) {
   filterGroup.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
   cards.forEach(card=>{card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter;});
   const count=cards.filter(c=>!c.hidden).length;
-  root.querySelector('.ps-filter-status').textContent=`${count} ${count===1?'project':'projects'} · real product screens`;
+  root.querySelector('.ps-filter-status').textContent=`${count} ${count===1?'project':'projects'} · product work and prototypes`;
  });
  root.classList.add('ps-enhanced');
 }

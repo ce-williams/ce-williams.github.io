@@ -1,6 +1,6 @@
 # Curtis Williams · Portfolio
 
-A lean, static portfolio for applied AI and systems work, with **19 real UI screenshots across five projects**, responsive carousels, an expanded gallery, and concise technical case studies.
+A lean, static portfolio for AI-assisted systems work, with **19 real UI screenshots across five projects**, a sixth linked project case study, responsive carousels, an expanded gallery, and concise technical case studies.
 
 - **Website:** https://ce-williams.github.io/
 - **Repository:** https://github.com/ce-williams/ce-williams.github.io

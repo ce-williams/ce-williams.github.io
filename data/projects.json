@@ -218,5 +218,25 @@
         "note": "Descriptive demo analytics · no validated clinical claims"
       }
     ]
+  },
+  {
+    "slug": "perk",
+    "name": "PERK",
+    "category": "Personal finance",
+    "filter": "workflow",
+    "maturity": "Static local-first demo",
+    "summary": "A credit-card benefits journal that turns fictional benefit scenarios into clear, deadline-aware next steps.",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "sourceUrl": "https://github.com/ce-williams/perk",
+    "liveUrl": "https://ce-williams.github.io/perk/",
+    "why": "Makes it easier to see card benefits, remaining allowances, and the next action without connecting a bank account.",
+    "technical": "A static Next.js export uses a local browser repository, rule-driven benefit calculations, and calendar exports. The underlying schema and rules keep benefit periods, enrollment, usage, and reversals explicit.",
+    "demonstrates": "Local-first state, transparent rules, deadline prioritization, and calendar export.",
+    "boundary": "A fictional demo with invented benefit rules and amounts. It has no issuer connection, bank data, account, or live reminder service.",
+    "screenshots": []
   }
 ]

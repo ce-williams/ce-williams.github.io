@@ -2,7 +2,7 @@
   "name":"Curtis Williams",
   "title":"Senior GTM Systems Engineer",
   "location":"Denver, Colorado",
-  "summary":"GTM systems engineer working across Salesforce, revenue operations, CI/CD, integrations, and AI-assisted tooling.",
+  "summary":"Senior GTM Systems Engineer specializing in AI-assisted revenue systems, Salesforce architecture, and workflow automation.",
   "profileUrl":"https://www.linkedin.com/in/ce-williams/",
   "sourceUrl":"https://www.linkedin.com/in/ce-williams/details/experience/",
   "reviewedAt":"2026-10-20",
@@ -14,10 +14,10 @@
   ],
   "roles":[
     {"company":"Fivetran","title":"Senior GTM Systems Engineer","start":"2024-04","end":null,"dates":"Apr 2024 – Present","location":"Remote · Denver, Colorado","highlights":[
-      "Built two Claude Code skills used by the team to edit LeanData routing graphs with structural validation and explain routing decisions.",
-      "Redesigned LeanData and Salesforce lead routing for single-digit-second processing; reduced unwanted account creation by 81.5% (4,879 accounts avoided).",
-      "Led the migration to a Copado and GitHub deployment pipeline across Salesforce and revenue systems, supporting releases across multiple environments.",
-      "Delivered Salesforce–Rocketlane integration and Census enablement; prototyped incident-response workflows using Dust, Glean, and LLM tools."
+      "Builds AI-assisted tools for LeanData routing, Salesforce CPQ configuration, and metadata analysis.",
+      "Reworked lead routing to reduce unwanted account creation by 81.5% (4,879 accounts avoided).",
+      "Led the Copado and GitHub release pipeline for Salesforce and revenue systems.",
+      "Delivers integrations and data workflows across Salesforce, Rocketlane, Census, BigQuery, and Xactly."
     ],"cvExtra":["Reduced administrative permissions and retired unused Salesforce objects, fields, and automations as part of governance and technical-debt work.","Resolved an end-of-quarter CPQ outage in under an hour and delivered an address-validation component that reconciled a $2M discrepancy."]},
     {"company":"Transcarent","title":"Software Engineer II","start":"2021-11","end":"2024-04","dates":"Nov 2021 – Apr 2024","location":"Remote","highlights":[
       "Developed Salesforce integrations, Apex service classes, triggers, and Flow automations across opportunity, product, and billing workflows.",
