@@ -2,23 +2,23 @@
   "name":"Curtis Williams",
   "title":"Senior GTM Systems Engineer",
   "location":"Denver, Colorado",
-  "summary":"AI-native systems engineer specializing in GTM architecture, Salesforce ecosystems, and agentic workflows. I build automation and API-first systems that reduce technical debt and support scale.",
+  "summary":"Senior GTM systems engineer focused on Salesforce, revenue operations, and AI-assisted delivery. I build and simplify routing, release, integration, and governance systems.",
   "profileUrl":"https://www.linkedin.com/in/ce-williams/",
   "sourceUrl":"https://www.linkedin.com/in/ce-williams/details/experience/",
   "reviewedAt":"2026-10-20",
   "sourceNote":"Roles, dates, and achievements transcribed and summarized from the user's LinkedIn profile, reviewed October 20, 2026. Education and certifications come from the profile's About section. No personal contact details are included.",
   "highlights":[
-    {"value":"4+","label":"Claude Code skills and agent workflows shipped"},
+    {"value":"4+","label":"agent tools for Salesforce and LeanData"},
     {"value":"81.5%","label":"reduction in unwanted account creation"},
-    {"value":"Copado + GitHub","label":"Salesforce release pipeline migration"}
+    {"value":"13 GB","label":"Salesforce storage removed during cleanup"}
   ],
   "roles":[
     {"company":"Fivetran","title":"Senior GTM Systems Engineer","start":"2024-04","end":null,"dates":"Apr 2024 – Present","location":"Remote · Denver, Colorado","highlights":[
-      "Built four-plus Claude Code skills: LeanData Edit, LeanData Audit, CPQ product creation, and Arovy Analysis for Salesforce metadata and governance questions.",
-      "Used agents in CI/CD and browser-based Salesforce UAT; prototyped a sales-intelligence cockpit that combines account, opportunity, and usage context.",
-      "Reworked LeanData and Salesforce routing to reduce unwanted account creation by 81.5% (4,879 accounts avoided).",
-      "Leads release, integration, and data work across Copado, GitHub, Rocketlane, Census, BigQuery, dbt, and Xactly."
-    ],"cvHighlights":["Built four-plus Claude Code skills: LeanData Edit, LeanData Audit, CPQ product creation, and Arovy Analysis for Salesforce metadata and governance questions.","Used agents in CI/CD and browser-based Salesforce UAT; prototyped a sales-intelligence cockpit that combines account, opportunity, and usage context.","Reworked LeanData and Salesforce routing to sub-second processing; reduced unwanted account creation by 81.5% (4,879 accounts avoided).","Led the transition to a Copado and GitHub deployment pipeline across Salesforce and revenue systems, supporting multi-environment releases and a zero-downtime fiscal-year launch.","Removed 56 objects, 350+ fields, and 30+ automations; reduced 13 GB of storage and strengthened governance for future integrations.","Reduced System Admin roles from 125 to 61 and cut admin-level permissions by 50%.","Configured Census reverse-ETL syncs, authored BigQuery and Salesforce-history SQL for Xactly compensation, and partnered on dbt models.","Resolved an end-of-quarter CPQ outage in under an hour and delivered address validation that reconciled a $2M discrepancy.","Led Salesforce-Rocketlane integration delivery and used browser-based agents for Salesforce UAT." ]},
+      "Built an internal agent toolkit that edits LeanData routing graphs, explains assignment decisions, creates Salesforce CPQ products, and answers metadata and dependency questions through MCP.",
+      "Embedded agents in Buildkite deployments and browser-based Salesforce UAT; prototyped a seller cockpit before committing engineering capacity.",
+      "Re-architected LeanData and Salesforce routing for sub-second processing, eliminating 4,879 unnecessary accounts (81.5%).",
+      "Removed 56 objects, 350+ fields, 30+ automations, and 13 GB of storage; cut System Admin roles from 125 to 61."
+    ],"cvHighlights":["Built an internal agent toolkit that edits LeanData routing graphs, explains assignment decisions, creates Salesforce CPQ products, and answers metadata and dependency questions through MCP.","Embedded agents in Buildkite deployments and browser-based Salesforce UAT; prototyped a seller cockpit that combines Salesforce account, opportunity, and usage context.","Used Claude Code to build and refactor Apex, triggers, and Flows across lead routing, CPQ, and validation workflows.","Led the move to a Copado and GitHub release pipeline, enabling structured multi-environment deployments and a zero-downtime fiscal-year launch.","Re-architected LeanData and Salesforce routing for sub-second processing, eliminating 4,879 unnecessary accounts (81.5%).","Removed 56 objects, 350+ fields, 30+ automations, and 13 GB of storage; reduced System Admin roles from 125 to 61 and admin-level permissions by 50%.","Configured Census reverse ETL, wrote BigQuery and Salesforce-history SQL for Xactly compensation, partnered on dbt models, and led the Salesforce-Rocketlane integration.","Resolved an end-of-quarter CPQ outage in under an hour and uncovered a $2M discrepancy through address-validation work." ]},
     {"company":"Transcarent","title":"Software Engineer II","start":"2021-11","end":"2024-04","dates":"Nov 2021 – Apr 2024","location":"Remote","highlights":[
       "Built Salesforce integrations during the 98point6 merger using Apex, Flow, and API-driven architecture with HIPAA compliance.",
       "Developed Apex services, triggers, and Flow automations across opportunity, product, and billing workflows; partnered with Marketing on Account Engagement automation."

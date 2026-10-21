@@ -1,43 +1,154 @@
-"""Generate the public CV from the same LinkedIn-sourced data as the website."""
-import json,shutil
-from pathlib import Path
+"""Generate the public two-page CV from the portfolio experience manifest."""
+import json
+import shutil
 from html import escape
-from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,PageBreak,KeepTogether,HRFlowable
-from reportlab.lib.styles import getSampleStyleSheet,ParagraphStyle
+from pathlib import Path
+
 from reportlab.lib import colors
-from reportlab.lib.enums import TA_LEFT
-ROOT=Path(__file__).resolve().parent.parent
-info=json.loads((ROOT/'data/experience.json').read_text())
-out=ROOT/'output/pdf/curtis-williams-cv.pdf';out.parent.mkdir(parents=True,exist_ok=True)
-ink=colors.HexColor('#202b20');muted=colors.HexColor('#59644f');accent=colors.HexColor('#536c3e');line=colors.HexColor('#d9ded2')
-styles={
- 'name':ParagraphStyle('name',fontName='Helvetica',fontSize=29,leading=34,textColor=ink,spaceAfter=6),
- 'title':ParagraphStyle('title',fontName='Helvetica',fontSize=12,leading=17,textColor=accent,spaceAfter=8),
- 'body':ParagraphStyle('body',fontName='Helvetica',fontSize=9.7,leading=14.5,textColor=ink,spaceAfter=9),
- 'small':ParagraphStyle('small',fontName='Helvetica',fontSize=8,leading=12,textColor=muted,spaceAfter=11),
- 'section':ParagraphStyle('section',fontName='Helvetica-Bold',fontSize=9.5,leading=14,textColor=accent,spaceBefore=17,spaceAfter=10),
- 'role':ParagraphStyle('role',fontName='Helvetica-Bold',fontSize=12,leading=16,textColor=ink,spaceAfter=4),
- 'meta':ParagraphStyle('meta',fontName='Helvetica',fontSize=8.5,leading=12,textColor=muted,spaceAfter=10),
- 'bullet':ParagraphStyle('bullet',fontName='Helvetica',fontSize=9.4,leading=14.2,textColor=ink,leftIndent=10,firstLineIndent=-10,spaceAfter=6),
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.styles import ParagraphStyle
+from reportlab.lib.units import inch
+from reportlab.platypus import (
+    HRFlowable,
+    KeepTogether,
+    PageBreak,
+    Paragraph,
+    SimpleDocTemplate,
+    Spacer,
+    Table,
+    TableStyle,
+)
+
+ROOT = Path(__file__).resolve().parent.parent
+INFO = json.loads((ROOT / "data/experience.json").read_text())
+OUT = ROOT / "output/pdf/curtis-williams-cv.pdf"
+OUT.parent.mkdir(parents=True, exist_ok=True)
+
+INK = colors.HexColor("#16231b")
+MUTED = colors.HexColor("#536158")
+ACCENT = colors.HexColor("#4f6b42")
+LIGHT = colors.HexColor("#d9dfd7")
+PALE = colors.HexColor("#f2f5f0")
+
+styles = {
+    "name": ParagraphStyle("name", fontName="Helvetica-Bold", fontSize=26, leading=29, textColor=INK, spaceAfter=5),
+    "title": ParagraphStyle("title", fontName="Helvetica-Bold", fontSize=10.2, leading=13, tracking=.4, textColor=ACCENT, spaceAfter=7),
+    "links": ParagraphStyle("links", fontName="Helvetica", fontSize=8.1, leading=11, textColor=MUTED, spaceAfter=11),
+    "summary": ParagraphStyle("summary", fontName="Helvetica", fontSize=9.6, leading=13.5, textColor=INK, spaceAfter=8),
+    "section": ParagraphStyle("section", fontName="Helvetica-Bold", fontSize=9, leading=11.5, tracking=.7, textColor=ACCENT, spaceBefore=10, spaceAfter=7),
+    "role": ParagraphStyle("role", fontName="Helvetica-Bold", fontSize=11.5, leading=14, textColor=INK, spaceAfter=2),
+    "meta": ParagraphStyle("meta", fontName="Helvetica", fontSize=8.1, leading=10.5, textColor=MUTED, spaceAfter=6),
+    "bullet": ParagraphStyle("bullet", fontName="Helvetica", fontSize=8.7, leading=11.8, textColor=INK, leftIndent=10, firstLineIndent=-9, spaceAfter=3.8),
+    "compact": ParagraphStyle("compact", fontName="Helvetica", fontSize=8.6, leading=11.6, textColor=INK, spaceAfter=4),
+    "small": ParagraphStyle("small", fontName="Helvetica", fontSize=8, leading=10.5, textColor=MUTED),
 }
-def text(s):
- return escape(s.replace('–','-').replace('—','-').replace('’',"'").replace('↔',' / '))
-def para(s,k='body'):return Paragraph(s,styles[k])
-story=[para(text(info['name']),'name'),para('SENIOR GTM SYSTEMS ENGINEER | AI &amp; REVENUE SYSTEMS ARCHITECT','title'),para('Denver, Colorado | <link href="https://ce-williams.github.io/">ce-williams.github.io</link> | <link href="https://www.linkedin.com/in/ce-williams/">LinkedIn</link> | <link href="https://github.com/ce-williams/">GitHub</link>','small'),HRFlowable(width='100%',thickness=.6,color=line),Spacer(1,14),para('AI-native systems engineer specializing in GTM architecture, Salesforce ecosystems, and agentic workflow design. Builds automation and API-first systems that reduce technical debt and support scale.'),para('CORE SKILLS','section'),para(text(' / '.join(info['skills'])),'small'),para('PROFESSIONAL EXPERIENCE','section')]
-def add_role(r,extra=True):
- title=para(text(r['title'])+' | '+text(r['company']),'role')
- meta=para(text(r['dates'])+' / '+text(r['location']),'meta')
- bullets=[para('- '+text(x),'bullet') for x in r.get('cvHighlights',r['highlights']+(r.get('cvExtra',[]) if extra else []))]
- story.append(KeepTogether([title,meta,bullets[0]]));story.extend(bullets[1:]);story.append(Spacer(1,12))
-for r in info['roles'][:2]:add_role(r)
-story.extend([para('EARLIER EXPERIENCE','section')])
-for r in info['roles'][2:]:add_role(r,extra=False)
-story.extend([para('EDUCATION','section')])
-for e in info['education']:story.append(para('<b>'+text(e['credential'])+'</b><br/>'+text(e['institution']),'body'))
-story.extend([para('CERTIFICATIONS','section'),para('<br/>'.join(text(c) for c in info['certifications']),'body')])
-def page_footer(canvas,doc):
- canvas.saveState();canvas.setStrokeColor(line);canvas.line(46,39,566,39);canvas.setFont('Helvetica',7.5);canvas.setFillColor(muted);canvas.drawString(46,25,'Curtis Williams | GTM Systems Engineer | October 2026');canvas.drawRightString(566,25,str(doc.page));canvas.restoreState()
-doc=SimpleDocTemplate(str(out),pagesize=(612,792),leftMargin=46,rightMargin=46,topMargin=38,bottomMargin=52,title='Curtis Williams - Professional CV',author='Curtis Williams')
-doc.build(story,onFirstPage=page_footer,onLaterPages=page_footer)
-shutil.copy2(out,ROOT/'assets/curtis-williams-cv.pdf')
-print(out)
+
+
+def clean(value):
+    return escape(str(value).replace("–", "-").replace("—", "-").replace("’", "'").replace("↔", " to "))
+
+
+def p(value, style="summary"):
+    return Paragraph(value, styles[style])
+
+
+def section(label):
+    return p(clean(label.upper()), "section")
+
+
+def role_block(role, bullets):
+    heading = p(f"{clean(role['title'])} <font color='#536158'>|</font> {clean(role['company'])}", "role")
+    meta = p(f"{clean(role['dates'])}  /  {clean(role['location'])}", "meta")
+    items = [p(f"<bullet>&bull;</bullet>{clean(item)}", "bullet") for item in bullets]
+    return [KeepTogether([heading, meta, items[0]]), *items[1:], Spacer(1, 5)]
+
+
+story = [
+    p(clean(INFO["name"]), "name"),
+    p("SENIOR GTM SYSTEMS ENGINEER  |  AI &amp; REVENUE SYSTEMS ARCHITECT", "title"),
+    p(
+        "Denver, Colorado&nbsp;&nbsp;|&nbsp;&nbsp;"
+        '<link href="https://ce-williams.github.io/">Portfolio</link>&nbsp;&nbsp;|&nbsp;&nbsp;'
+        '<link href="https://www.linkedin.com/in/ce-williams/">LinkedIn</link>&nbsp;&nbsp;|&nbsp;&nbsp;'
+        '<link href="https://github.com/ce-williams/">GitHub</link>',
+        "links",
+    ),
+    HRFlowable(width="100%", thickness=.7, color=LIGHT),
+    Spacer(1, 9),
+    p(
+        "Senior GTM systems engineer focused on Salesforce, revenue operations, and AI-assisted delivery. "
+        "Builds reliable routing, release, integration, and governance systems; uses agents to accelerate development, testing, and operational support."
+    ),
+    section("Core capabilities"),
+    p(
+        "Salesforce architecture &amp; CPQ&nbsp;&nbsp;&bull;&nbsp;&nbsp;Apex &amp; Flow&nbsp;&nbsp;&bull;&nbsp;&nbsp;Agent workflows &amp; MCP&nbsp;&nbsp;&bull;&nbsp;&nbsp;"
+        "CI/CD&nbsp;&nbsp;&bull;&nbsp;&nbsp;LeanData&nbsp;&nbsp;&bull;&nbsp;&nbsp;API integrations&nbsp;&nbsp;&bull;&nbsp;&nbsp;SQL, BigQuery &amp; dbt&nbsp;&nbsp;&bull;&nbsp;&nbsp;Data governance",
+        "small",
+    ),
+    section("Professional experience"),
+]
+
+fivetran = INFO["roles"][0]
+story.extend(role_block(fivetran, fivetran["cvHighlights"]))
+
+transcarent = INFO["roles"][1]
+vantage = INFO["roles"][2]
+boom = INFO["roles"][3]
+story.extend(role_block(transcarent, transcarent["cvHighlights"]))
+story.append(PageBreak())
+story.append(section("Professional experience continued"))
+story.extend(role_block(vantage, vantage["highlights"] + vantage.get("cvExtra", [])))
+story.extend(role_block(boom, boom["highlights"] + boom.get("cvExtra", [])))
+
+story.extend([
+    section("Earlier experience"),
+    p("<b>Target</b> - Advanced to Sr Specialist, Space and Presentation; supported three apparel-brand launches across 1,000+ stores, contributing to approximately 20% comp growth and $2M in sales.", "compact"),
+    p("<b>SSQTCH, LLC</b> - Co-founded an Emmy Award-winning multimedia production company and led client development, marketing, editing, and production work.", "compact"),
+    section("Education & certifications"),
+])
+
+education = "<b>B.A., Biological Sciences</b><br/>College of Saint Benedict &amp; Saint John's University<br/><br/><b>Full Stack Web Development Certificate</b><br/>University of Minnesota"
+certifications = "<b>Salesforce</b><br/>AI Associate<br/>Platform App Builder<br/>Administrator<br/><br/><b>LeanData</b><br/>Fundamentals"
+table = Table(
+    [[p(education, "compact"), p(certifications, "compact")]],
+    colWidths=[3.55 * inch, 2.45 * inch],
+    hAlign="LEFT",
+)
+table.setStyle(TableStyle([
+    ("BACKGROUND", (0, 0), (-1, -1), PALE),
+    ("BOX", (0, 0), (-1, -1), .5, LIGHT),
+    ("INNERGRID", (0, 0), (-1, -1), .5, LIGHT),
+    ("VALIGN", (0, 0), (-1, -1), "TOP"),
+    ("LEFTPADDING", (0, 0), (-1, -1), 10),
+    ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+    ("TOPPADDING", (0, 0), (-1, -1), 9),
+    ("BOTTOMPADDING", (0, 0), (-1, -1), 9),
+]))
+story.append(table)
+
+
+def footer(canvas, doc):
+    canvas.saveState()
+    canvas.setStrokeColor(LIGHT)
+    canvas.line(42, 36, 570, 36)
+    canvas.setFont("Helvetica", 7.2)
+    canvas.setFillColor(MUTED)
+    canvas.drawString(42, 23, "Curtis Williams  |  GTM Systems Engineering")
+    canvas.drawRightString(570, 23, str(doc.page))
+    canvas.restoreState()
+
+
+doc = SimpleDocTemplate(
+    str(OUT),
+    pagesize=letter,
+    leftMargin=42,
+    rightMargin=42,
+    topMargin=32,
+    bottomMargin=47,
+    title="Curtis Williams - Senior GTM Systems Engineer",
+    author="Curtis Williams",
+    subject="Professional CV",
+)
+doc.build(story, onFirstPage=footer, onLaterPages=footer)
+shutil.copy2(OUT, ROOT / "assets/curtis-williams-cv.pdf")
+print(OUT)
