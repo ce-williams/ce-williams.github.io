@@ -2,26 +2,26 @@
   "name":"Curtis Williams",
   "title":"Senior GTM Systems Engineer",
   "location":"Denver, Colorado",
-  "summary":"Senior GTM Systems Engineer specializing in AI-assisted revenue systems, Salesforce architecture, and workflow automation.",
+  "summary":"AI-native systems engineer specializing in GTM architecture, Salesforce ecosystems, and agentic workflows. I build automation and API-first systems that reduce technical debt and support scale.",
   "profileUrl":"https://www.linkedin.com/in/ce-williams/",
   "sourceUrl":"https://www.linkedin.com/in/ce-williams/details/experience/",
   "reviewedAt":"2026-10-20",
   "sourceNote":"Roles, dates, and achievements transcribed and summarized from the user's LinkedIn profile, reviewed October 20, 2026. Education and certifications come from the profile's About section. No personal contact details are included.",
   "highlights":[
-    {"value":"2","label":"Claude Code tools shipped for team use"},
+    {"value":"AI workflows","label":"agent tooling, UAT, and deployment support"},
     {"value":"81.5%","label":"reduction in unwanted account creation"},
     {"value":"Copado + GitHub","label":"Salesforce release pipeline migration"}
   ],
   "roles":[
     {"company":"Fivetran","title":"Senior GTM Systems Engineer","start":"2024-04","end":null,"dates":"Apr 2024 – Present","location":"Remote · Denver, Colorado","highlights":[
-      "Builds AI-assisted tools for LeanData routing, Salesforce CPQ configuration, and metadata analysis.",
-      "Reworked lead routing to reduce unwanted account creation by 81.5% (4,879 accounts avoided).",
-      "Led the Copado and GitHub release pipeline for Salesforce and revenue systems.",
-      "Delivers integrations and data workflows across Salesforce, Rocketlane, Census, BigQuery, and Xactly."
+      "Builds agent workflows and Claude Code skills for LeanData routing, Salesforce CPQ product configuration, and metadata analysis.",
+      "Integrated agents into deployment workflows and browser-based Salesforce UAT for end-to-end change validation.",
+      "Reworked LeanData and Salesforce routing to reduce unwanted account creation by 81.5% (4,879 accounts avoided).",
+      "Leads release, integration, and data work across Copado, GitHub, Rocketlane, Census, BigQuery, dbt, and Xactly."
     ],"cvHighlights":["Built agent workflows and Claude Code skills for LeanData routing, Salesforce CPQ product configuration, metadata analysis, and deployment troubleshooting.","Reworked LeanData and Salesforce routing to sub-second processing; reduced unwanted account creation by 81.5% (4,879 accounts avoided).","Led the transition to a Copado and GitHub deployment pipeline across Salesforce and revenue systems, supporting multi-environment releases and a zero-downtime fiscal-year launch.","Removed 56 objects, 350+ fields, and 30+ automations; reduced 13 GB of storage and strengthened governance for future integrations.","Reduced System Admin roles from 125 to 61 and cut admin-level permissions by 50%.","Configured Census reverse-ETL syncs, authored BigQuery and Salesforce-history SQL for Xactly compensation, and partnered on dbt models.","Resolved an end-of-quarter CPQ outage in under an hour and delivered address validation that reconciled a $2M discrepancy.","Led Salesforce-Rocketlane integration delivery and used browser-based agents for Salesforce UAT." ]},
     {"company":"Transcarent","title":"Software Engineer II","start":"2021-11","end":"2024-04","dates":"Nov 2021 – Apr 2024","location":"Remote","highlights":[
-      "Developed Salesforce integrations, Apex service classes, triggers, and Flow automations across opportunity, product, and billing workflows.",
-      "Worked with Marketing on Salesforce Account Engagement and led the 2023 internal hackathon."
+      "Built Salesforce integrations during the 98point6 merger using Apex, Flow, and API-driven architecture with HIPAA compliance.",
+      "Developed Apex services, triggers, and Flow automations across opportunity, product, and billing workflows; partnered with Marketing on Account Engagement automation."
     ],"cvHighlights":["Built and scaled Salesforce integrations during the 98point6 merger using Apex, Flow, and API-driven architecture with HIPAA compliance.","Developed and optimized Apex service classes, triggers, and Flow automations across opportunity, product, and billing workflows.","Partnered with Marketing on Account Engagement automation and led the 2023 internal hackathon.","Contributed 900+ GitHub commits in 2023 and led major repository changes.","Drove roadmap planning, test strategy, and technical-debt reduction with an emphasis on automation reliability."]},
     {"company":"Vantage Point Consulting","title":"Salesforce Developer","start":"2021-04","end":"2021-10","dates":"Apr 2021 – Oct 2021","location":"Minneapolis, Minnesota","highlights":[
       "Led financial-services client projects in developer and architect roles, delivering Apex, Visualforce, LWC, Aura, and Salesforce automation."
